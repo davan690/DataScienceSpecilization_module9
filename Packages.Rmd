@@ -1,0 +1,55 @@
+---
+title: "Packages"
+author: "james c walmsley"
+date: "March 9, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, packages, echo=FALSE, include=FALSE, results='hide'}
+install.packages("devtools")
+install.packages("UsingR")
+install.packages("caret")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("git2r")
+install.packages("kernlab")
+install.packages("pgmm")
+install.packages("randomForest")
+install.packages("rattle")
+install.packages("raster")
+install.packages("RColorBrewer")
+install.packages("rpart")
+install.packages("yaml")
+install.packages("utils")
+install.packages("stats")
+install.packages("tidyr")
+library(devtools)
+library(UsingR)
+library(caret)
+library(dplyr)
+library(ggplot2)
+library(git2r)
+library(kernlab)
+library(pgmm)
+library(randomForest)
+library(rattle)
+library(raster)
+library(RColorBrewer)
+library(rpart)
+library(yaml)
+library(utils)
+library(stats)
+library(tidyr)
+devtools::install_github('rstudio/shinyapps')
+```
+
+
+
+
+
+
