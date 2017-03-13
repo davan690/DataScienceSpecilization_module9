@@ -1,17 +1,35 @@
 library(shiny)
 
 # Define server logic required to draw a histogram
-shinyServer(function(input, output) {
+shinyServer(
+        function(input, output) {
 
-  output$distPlot <- renderPlot({
+                colm <- reactive({
+                        as.numeric(input$var)
+                })
 
-    # generate bins based on input$bins from ui.R
-    x    <- faithful[, 2]
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
+                output$sum <- renderPrint({
+                        summary(iris)
+                })
 
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
 
-  })
+                output$str <- renderPrint({
+                        str(iris)
 
-})
+                })
+
+                output$data <- renderTable({
+                        iris[colm()]
+                        head(iris)
+                        # head(iris)
+
+                })
+
+
+                output$myhist <- renderPlot({
+                        # generate bins based on input$bins from ui.R & draw the histogram with the specified number of bins
+                        hist(iris[,colm()], breaks =seq(0, max(iris[,colm()]), l=input$bins+1),
+                             col = input$color, main = "Histogram of the Iris data set",
+                             xlab=names(iris[colm()]))
+                })
+        })
