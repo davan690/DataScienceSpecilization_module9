@@ -6,6 +6,11 @@ shinyUI(fluidPage(
         titlePanel(title = h2("Identifying Characteristics of Different Species in the Iris Data Set", align="center")),
 
         br(),
+        h5("Instructions:"),
+        h6(" 1.) First, This Shiny Application enables you to select a varialbe from within the Iris data set from the drop down menu located at 1. on the left side of the screen."),
+        h6(" 2.) Next, the selector located at 2. on the left of the screen allows you to modify the number of bins that are drawn in the plot of the resulting histogram according to your input within the given range."),
+        h6(" 3.) Finally, You can adjust the color of the resulting higtogram plot by selecting one of three radio buttons provided at 3. on the lefts side of the screen."),
+        br(),
         br(),
         # Sidebar with a slider input for number of bins
         sidebarLayout(
@@ -19,7 +24,7 @@ shinyUI(fluidPage(
                 sliderInput("bins",
                             "2. Select How Many BINs in the Histogram",
                         min = 5,
-                        max = 25,
+                        max = 50,
                         value = 15),
 
                 br(),
@@ -31,11 +36,11 @@ shinyUI(fluidPage(
                 ),
                 # Show a plot of the generated distribution
                 mainPanel(
-                tabsetPanel(
-                        tabPanel("Summary", verbatimTextOutput("sum")),
-                        tabPanel("Structure", verbatimTextOutput("str")),
-                        tabPanel("Data", tableOutput("data")),
-                        tabPanel("Plot", plotOutput("my_hist"))
+                        tabsetPanel(
+#                        tabPanel("Plot", plotOutput("my_hist")),
+                                tabPanel("Data", tableOutput("data")),
+                                tabPanel("Summary", verbatimTextOutput("sum")),
+                                tabPanel("Structure", verbatimTextOutput("str"))
                 ),
 
                 plotOutput("myhist"),
