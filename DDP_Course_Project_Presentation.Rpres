@@ -3,26 +3,32 @@ Developing Data Products Project
 author: James C. Walmsley
 date: March 13, 2017
 autosize: false
-First Slide
+
+Shiny Project Objectives:
 ========================================================
+transition: rotate
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+-    Include an input such as a: (widget: textbox, radio button, checkbox, ...)
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+-    Include an operation on the ui input in sever.R
 
-Slide With Code
+-    Include a reactive output displayed as a result of server calculations
+
+-    Include enough documentation so that a novice user could use your application.
+
+-    Documentation should be at the Shiny website itself, not posted to an external link.
+
+Project Data Set Summary
 ========================================================
 
 ```{r}
-summary(cars)
+summary(iris)
 ```
 
-Slide With Plot
+Multivariate Linear Model of the Iris data set
 ========================================================
 
 ```{r, echo=FALSE}
-plot(cars)
+boxplot(iris$Species ~ ., data = iris)
 ```
 
