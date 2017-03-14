@@ -1,15 +1,5 @@
 library(shiny)
 library(dplyr)
-data(airquality)
-library(ggplot2)
-
-
-acc <- airquality[complete.cases(airquality),]
-str(acc)
-# m1 <- lm(Ozone ~ Temp, data = acc)
-# m2 <- lm(Ozone ~ I((Solar.R + Temp) / 2), data = acc)
-
-
 
 shinyServer(function(input, output) {
 
