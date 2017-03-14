@@ -6,7 +6,6 @@ autosize: false
 
 Shiny Project Objectives:
 ========================================================
-transition: rotate
 
 -    Include an input such as a: (widget: textbox, radio button, checkbox, ...)
 
@@ -29,6 +28,6 @@ Multivariate Linear Model of the Iris data set
 ========================================================
 
 ```{r, echo=FALSE}
-boxplot(iris$Species ~ ., data = iris)
+head(iris)
 ```
 
