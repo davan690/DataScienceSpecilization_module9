@@ -44,37 +44,5 @@ Accessing the Shiny Application
 
 
 
-<!-- Relating Ozone & Temperature -->
-<!-- ======================================================== -->
-<!-- ```{r, echo=FALSE, results='hide'} -->
-<!-- local({r <- getOption("repos") -->
-<!--        r["CRAN"] <- "http://cran.r-project.org" -->
-<!--        options(repos=r) -->
-<!-- }) -->
-<!-- acc <<- airquality[complete.cases(airquality),] -->
-<!-- summary(acc) -->
-<!-- install.packages("ggplot2") -->
-<!-- library(ggplot2) -->
-<!-- ``` -->
-
-<!-- ```{r, Ozone vs Temp, echo=FALSE} -->
-<!-- ggplot(acc, aes(Temp, Ozone)) + -->
-<!--         geom_point() + -->
-<!--         geom_smooth(method = "loess", se = FALSE) -->
-<!-- ``` -->
-
-<!-- Relating Ozone & Solar Radiation -->
-<!-- ========================================================= -->
-<!-- ```{r, Ozone vs Solar.R, echo=FALSE} -->
-<!-- ggplot(acc, aes(Solar.R, Ozone)) + -->
-<!--         geom_point() + -->
-<!--         geom_smooth(method = "loess", se = FALSE) -->
-<!-- ``` -->
-
-
-
-
-
-
 
 
