@@ -1,33 +1,80 @@
-Developing Data Products Project
+Predictive Shiny Application Project
 ========================================================
 author: James C. Walmsley
 date: March 13, 2017
 autosize: false
 
-Shiny Project Objectives:
-========================================================
 
--    Include an input such as a: (widget: textbox, radio button, checkbox, ...)
+Project Goals
+===
 
--    Include an operation on the ui input in sever.R
+- Develop a web-hosted "Interactive Shiny Application""
 
--    Include a reactive output displayed as a result of server calculations
+- Produce a web-hosted presentation pitch for the application
 
--    Include enough documentation so that a novice user could use your application.
 
--    Documentation should be at the Shiny website itself, not posted to an external link.
+Shiny Application
+===
 
-Project Data Set Summary
-========================================================
+- Application uses R code to generate outputs from user inputs
+- Provide sufficient user documentation
 
-```{r}
-summary(iris)
-```
 
-Multivariate Linear Model of the Iris data set
-========================================================
+Application Specifics
+===
+1. Prepare the data
+1. Apply a lm (linear model)
+1. Transform user inputs to predictive outputs through R code
+1. Provide predictive cofidence intervals
+1. Produce interactive graphics for data, predictive and model visualization
 
-```{r, echo=FALSE}
-head(iris)
-```
+
+Accessing the Shiny Application
+===
+#[link](http://www.)
+#[link](http://www.)
+
+
+
+
+
+
+
+
+
+
+
+<!-- Relating Ozone & Temperature -->
+<!-- ======================================================== -->
+<!-- ```{r, echo=FALSE, results='hide'} -->
+<!-- local({r <- getOption("repos") -->
+<!--        r["CRAN"] <- "http://cran.r-project.org" -->
+<!--        options(repos=r) -->
+<!-- }) -->
+<!-- acc <<- airquality[complete.cases(airquality),] -->
+<!-- summary(acc) -->
+<!-- install.packages("ggplot2") -->
+<!-- library(ggplot2) -->
+<!-- ``` -->
+
+<!-- ```{r, Ozone vs Temp, echo=FALSE} -->
+<!-- ggplot(acc, aes(Temp, Ozone)) + -->
+<!--         geom_point() + -->
+<!--         geom_smooth(method = "loess", se = FALSE) -->
+<!-- ``` -->
+
+<!-- Relating Ozone & Solar Radiation -->
+<!-- ========================================================= -->
+<!-- ```{r, Ozone vs Solar.R, echo=FALSE} -->
+<!-- ggplot(acc, aes(Solar.R, Ozone)) + -->
+<!--         geom_point() + -->
+<!--         geom_smooth(method = "loess", se = FALSE) -->
+<!-- ``` -->
+
+
+
+
+
+
+
 
