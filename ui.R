@@ -15,6 +15,7 @@ shinyUI(fluidPage(
                         submitButton("Submit"),
                         br(),
                         h5(textOutput("counter")),
+                        br(),
                         tags$style("body{background-color:tan; color:blue}"),
                         br()
                 ),

@@ -3,8 +3,9 @@ title: DDP_CourseProject
 account: jcwal2016
 server: shinyapps.io
 appId: 164624
-bundleId: 751265
+bundleId: 751280
 url: https://jcwal2016.shinyapps.io/DDP_CourseProject/
-when: 1489751908.56777
+when: 1489752945.2537
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: .RData|counter.Rdata|DDP_Course_Project_Presentation.md|DDP_Project_Instructions|Packages.Rmd|ProjectReviewCriteria|README.md|data/.DS_Store|www/.DS_Store

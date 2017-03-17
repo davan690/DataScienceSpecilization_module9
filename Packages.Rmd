@@ -6,40 +6,30 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 devtools::install_github('rstudio/shinyapps')
 ```
 
 
 ```{r, packages, echo=FALSE, include=FALSE, results='hide'}
 install.packages("devtools")
-install.packages("caret")
 install.packages("dplyr")
 install.packages("ggplot2")
 install.packages("git2r")
 install.packages("kernlab")
 install.packages("pgmm")
-install.packages("randomForest")
-install.packages("rattle")
-install.packages("raster")
 install.packages("RColorBrewer")
-install.packages("rpart")
 install.packages("yaml")
 install.packages("stats")
 install.packages("tidyr")
 install.packages("datasets")
 library(devtools)
-library(caret)
 library(dplyr)
 library(ggplot2)
 library(git2r)
 library(kernlab)
 library(pgmm)
-library(randomForest)
-library(rattle)
-library(raster)
 library(RColorBrewer)
-library(rpart)
 library(yaml)
 library(stats)
 library(tidyr)

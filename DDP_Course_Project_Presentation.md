@@ -49,10 +49,11 @@ knitr::kable(head(acc <- airquality[complete.cases(airquality),],6), caption = "
 Access to the application & slidedeck:
 ===
 ## Links:
-#[link](http://www.http://rpubs.com/jcwal/259476)
-#[link](http://www.)
 
-## User feedback:
+[link](http://rpubs.com/jcwal/259519) Pitch Slide Deck Shiny Application
+
+
+[link](http://jcwal2016.shinyapps.io/DDP_CourseProject/) Shiny Application
 
 
 
