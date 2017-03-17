@@ -1,4 +1,4 @@
-Predictive Shiny Application Project
+Shiny Application Project
 ========================================================
 author: James C. Walmsley
 date: March 13, 2017
@@ -8,32 +8,40 @@ autosize: false
 Project Goals
 ===
 
-- Develop a web-hosted "Interactive Shiny Application""
+- Develop a web-hosted "Interactive Shiny Application"
 
-- Produce a web-hosted presentation pitch for the application
+- Produce a slidedeck with 5 slides to pitch the application
 
 
-Shiny Application
-===
-
-- Application uses R code to generate outputs from user inputs
-- Provide sufficient user documentation
+### Shiny Application Objectives
+- Generate predictive outputs from user inputs
+- Provide documentation for effective user interaction
 
 
 Application Specifics
 ===
-1. Prepare the data
-1. Apply a lm (linear model)
-1. Transform user inputs to predictive outputs through R code
-1. Provide predictive cofidence intervals
-1. Produce interactive graphics for data, predictive and model visualization
+- Data preparation
+- Apply a lm (linear model) with predictive capability
+- Transform user inputs to predictive outputs
+- Provide confidence intervals for prediction results
+- Produce interactive graphics for viewing data, predictive results and model visualizations
 
 
-Accessing the Shiny Application
+First 6 rows of acc data frame
 ===
-#[link](http://www.)
+```{r, data, echo=TRUE, results='asis'}
+
+knitr::kable(head(acc <- airquality[complete.cases(airquality),],6), caption = "First six rows of the acc data frame")
+```
+
+
+Access to the application & slidedeck:
+===
+## Links:
+#[link](http://www.http://rpubs.com/jcwal/259476)
 #[link](http://www.)
 
+## User feedback:
 
 
 
