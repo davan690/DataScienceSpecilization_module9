@@ -2,7 +2,7 @@
     "path" : "~/Desktop/Coursera_R/9_DevelopingDataProducts/DDP_CourseProject",
     "sortOrder" : [
         {
-            "ascending" : true,
+            "ascending" : false,
             "columnIndex" : 2
         }
     ]
