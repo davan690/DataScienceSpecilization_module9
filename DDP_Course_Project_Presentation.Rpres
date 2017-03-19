@@ -2,24 +2,28 @@ Shiny Application Project
 ========================================================
 author: James C. Walmsley
 date: March 13, 2017
-autosize: false
+autosize: True
 
 
 Project Goals
 ===
-
+|
+>
 - Develop a web-hosted "Interactive Shiny Application"
-
 - Produce a slidedeck with 5 slides to pitch the application
 
 
 ### Shiny Application Objectives
+|
+>
 - Generate predictive outputs from user inputs
 - Provide documentation for effective user interaction
 
 
 Application Specifics
 ===
+
+|
 - Data preparation
 - Apply a lm (linear model) with predictive capability
 - Transform user inputs to predictive outputs
@@ -35,19 +39,14 @@ knitr::kable(head(acc <- airquality[complete.cases(airquality),],6), caption = "
 ```
 
 
-Access to the application & slidedeck:
+Shiny Application link:
 ===
-## Links:
+|
+>
 
-[link](http://rpubs.com/jcwal/259519) Pitch Slide Deck Shiny Application
+- ["Shiny Application"](http://jcwal2016.shinyapps.io/DDP_CourseProject/)
 
-
-[link](http://jcwal2016.shinyapps.io/DDP_CourseProject/) Shiny Application
-
-
-
-
-
+- ["Pitch Slide Deck - Shiny Application"](http://rpubs.com/publish/claim/259996/4d8dc3246a4044a09d05018843ab499d)
 
 
 
