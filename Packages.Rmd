@@ -7,7 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-devtools::install_github('rstudio/shinyapps')
+# devtools::install_github('rstudio/shinyapps')
 ```
 
 
@@ -23,6 +23,7 @@ install.packages("yaml")
 install.packages("stats")
 install.packages("tidyr")
 install.packages("datasets")
+install.packages("mice")
 library(devtools)
 library(dplyr)
 library(ggplot2)
@@ -33,6 +34,7 @@ library(RColorBrewer)
 library(yaml)
 library(stats)
 library(tidyr)
+library(mice)
 ```
 
 
